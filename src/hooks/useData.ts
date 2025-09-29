@@ -6,7 +6,7 @@ export function useData() {
     queryKey: ["states-all"],
     queryFn: async () => {
       const res = await axiosInstance.get(
-        `/states/all?lamin=48.0&lomin=11.0&lamax=50.0&lomax=15.0`
+        `/states/all?lamin=34.5&lomin=-25.0&lamax=71.5&lomax=40.0`
       );
 
       return res.data;
